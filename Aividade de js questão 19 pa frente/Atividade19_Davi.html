@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto que aumenta a sombra</title>
+</head>
+<body>
+    <p mousemove style="text-shadow: 1px"> Texto </p>
+</body>
+<script>
+
+document.addEventListener("mousemove", function (e) {
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+      const shadowX = x * 20 - 10;
+      const shadowY = y * 20 - 10;
+      document.querySelector(
+        "p"
+      ).style.textShadow = `${shadowX}px ${shadowY}px 5px rgb(0, 255, 0)`;
+    });
+  
+</script>
+</html>
