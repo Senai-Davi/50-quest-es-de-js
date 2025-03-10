@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random adivinha </title>
+</head>
+<p>
+    let random = Math.floor(Math.random() * 10) + 1;
+    console.log(random)
+    function funcao() {
+        if (document.getElementById("text") == random) {
+            alert("ACERTOU");
+        }
+        else {
+            alert("ERROU")
+        }
+    }
+</p>
+<body>
+    <form>
+        <input type="text" id="text">
+        <button onclick="funcao()">Enviar</button>
+    </form>
+</body>
+<script>
+    let random = (Math.random() * 10);
+    let try = document.getElementById("text").value
+</script>
+</html>

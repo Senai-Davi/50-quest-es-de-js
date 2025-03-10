@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario divertido </title>
+</head>
+
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" />
+        <label for="password">password:</label>
+        <input type="password" id="password" >
+    </form>
+    <button onclick="funcao()">Enviar</button>
+</body>
+<script>
+function funcao(){
+    if(document.getElementById("nome").value == ""){
+        alert("Preenche ai")
+    }
+
+    if(document.getElementById("email").value == ""){
+        alert("Preenche ai")
+    }
+    if(document.getElementById("password").value == ""){
+        alert("Preenche ai")
+    }
+    else alert("boa meu mano")
+}
+</script>
+
+</html>

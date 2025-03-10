@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra papel tesoura </title>
+</head>
+
+<body>
+    <script>
+       window.onload = function funcao() 
+    let user = prompt("Pedra, Papel ou Tesoura?");
+        let random = Math.floor(Math.random() * 3);
+        function funcao(){
+        if (let == 1) {
+         jogo = Tesoura
+        }
+        else if (let == 0) {
+             jogo = Papel
+        }
+        else  {
+             jogo = Pedra
+        }
+
+        let jogo
+        if (user == jogo ) {
+      alert("Empate!");
+    } else if (
+      (user == "Pedra" && jogo == "Tesoura") ||
+      (user == "Papel" && jogo == "Pedra") ||
+      (user == "Tesoura" && jogo == "Papel")
+    ) {
+      alert("Você ganhou!");
+    } else {
+      alert("Você perdeu!");
+    }
+}
+    </script>
+
+</body>
+
+</html>
